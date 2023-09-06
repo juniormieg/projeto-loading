@@ -1,0 +1,101 @@
+:root {
+  --color-dark: rgb(14, 14, 14);
+  --color-dark2: rgb(32, 32, 32);
+  --color-dark3: rgb(22, 22, 22);
+  --color-white: #fff;
+  --color-violet: rgb(132, 51, 139);
+  --color-violet: rgb(95, 21, 99);
+}
+body {
+  font-family: "inter";
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 2rem;
+}
+
+.adicionar-tarefa {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#input-nova-tarefa,
+#botao-nova-task {
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  padding: 1rem;
+}
+#input-nova-tarefa {
+  width: 65%;
+  border-radius: 1rem;
+}
+#botao-nova-task {
+  background-color: var(--color-dark2);
+  border-radius: 1rem;
+  color: var(--color-white);
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 400ms;
+}
+#botao-nova-task:hover {
+  background-color: var(--color-dark3);
+}
+#lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+}
+#lista li {
+  list-style-type: none;
+  font-size: 1rem;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rounded-button {
+  border: none;
+  background-color: var(--color-white);
+  font-size: 1rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+#btn-ok {
+  background-color: var(--color-white);
+}
+#btn-ok:hover {
+  background-color: rgb(133, 133, 133);
+}
+
+#btn-excluir {
+  background-color: rgb(0, 128, 122);
+}
+#btn-excluir:hover {
+  background-color: rgb(2, 80, 76);
+}
+.botoes {
+  display: flex;
+  gap: 0.4rem;
+}
+.classdone {
+  background-color: green !important;
+}
