@@ -4,6 +4,10 @@
   --color-dark3: rgb(22, 22, 22);
   --color-white: #fff;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "inter";
   background-color: var(--color-dark);
@@ -11,20 +15,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
 }
 
 .content {
   display: flex;
   flex-direction: column;
   width: 65%;
-  gap: 2rem;
 }
-.top-side {
+#top-side {
   width: 100%;
-  height: 20rem;
-  z-index: -1;
-  background-color: #1fb7c2;
+  height: 13.25rem;
+  background-color: #6540aa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .adicionar-tarefa {
@@ -39,28 +43,41 @@ body {
   font-size: 1rem;
   outline: none;
   padding: 1rem;
+  transform: translateY(-50%);
 }
 #input-nova-tarefa {
+  border: 1px solid #1aa1b0;
   width: 65%;
   border-radius: 1rem;
-  background-color: #6540aa;
+  background-color: var(--color-dark2);
+  color: white;
 }
 #botao-nova-task {
-  background-color: var(--color-dark2);
-  border-radius: 1rem;
-  color: var(--color-white);
-  font-size: 1.2rem;
+  border: none;
+  background-color: #1aa1b0;
+  font-size: 2rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
-  transition: 400ms;
+  transition: 0.4s;
 }
 #botao-nova-task:hover {
-  background-color: var(--color-dark3);
+  opacity: 95%;
+}
+#paragraph {
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 #lista {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 0;
 }
 #lista li {
   list-style-type: none;
@@ -69,12 +86,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid #1aa1b0;
+  border-radius: 1rem;
+  padding-left: 0.15rem;
+  padding: 0.25rem;
 }
 #lista li:hover {
   background-color: var(--color-dark3);
   transition: 0.6s;
   border-radius: 1rem;
   padding-left: 1rem;
+  padding: 0.5rem;
 }
 .rounded-button {
   border: none;
@@ -91,22 +113,23 @@ body {
   transition: 0.4s;
 }
 #btn-ok {
-  background-color: var(--color-white);
+  background-color: rgb(218, 217, 217);
+  color: #1aa1b0;
+  transition: 0.6s ease-in-out;
 }
 #btn-ok:hover {
   background-color: rgb(133, 133, 133);
 }
 
 #btn-excluir {
-  background-color: rgb(0, 128, 122);
-}
-#btn-excluir:hover {
-  background-color: rgb(2, 80, 76);
+  background-color: transparent;
+  color: white;
 }
 .botoes {
   display: flex;
   gap: 0.4rem;
 }
 .classdone {
-  background-color: green !important;
+  background-color: #1aa1b0 !important;
+  color: var(--color-white) !important;
 }
