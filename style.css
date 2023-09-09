@@ -69,10 +69,25 @@ body {
 #botao-nova-task:hover {
   opacity: 95%;
 }
+.header-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+#select-list {
+  color: var(--color-white);
+  background-color: var(--color-dark);
+  border-radius: 0.5rem;
+  border-color: #1aa1b0;
+  padding: 0.4rem;
+  max-width: 12.5rem;
+  width: 100%;
+}
 #paragraph {
   font-weight: bold;
   font-size: 1.25rem;
-  margin-bottom: 0.5rem;
 }
 #lista {
   display: flex;

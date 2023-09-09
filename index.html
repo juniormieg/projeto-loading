@@ -20,7 +20,15 @@
         +
       </button>
     </div>
-    <p id="paragraph">Tarefas Criadas:</p>
+    <div class="header-list">
+      <p id="paragraph">Tarefas Criadas:</p>
+      <select onchange="filtrarPorDone()" id="select-list" name="select">
+        <option value="" disabled>Selecione uma das opções</option>
+        <option value="all" selected>Todas as tarefas</option>
+        <option value="doneTrue">Tarefas concluidas</option>
+        <option value="doneFalse">Tarefas não concluidas</option>
+      </select>
+    </div>
     <div class="lista-de-tarefas">
       <ol id="lista">
       </ol>
