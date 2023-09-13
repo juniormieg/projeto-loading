@@ -8,13 +8,12 @@ function validacaoSeExisteANovaTask() {
 function novaTarefa() {
   let input = document.getElementById("input-nova-tarefa");
 
-  //validacao
   if (!input.value) {
     alert("digite algo para inserir em sua lista");
   } else if (validacaoSeExisteANovaTask()) {
     alert("ja existe uma tarefa com esta descrição");
   } else {
-    //incrementacao para localstorage
+
     let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]");
     values.push({
       name: input.value,
