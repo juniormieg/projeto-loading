@@ -15,14 +15,14 @@
   </div>
   <div class="content">
     <div class="adicionar-tarefa">
-      <input type="text" id="input-nova-tarefa" placeholder="digite sua nova tarefa">
+      <input type="text" id="input-nova-tarefa" placeholder="digite sua nova tarefa" onkeydown="if(event.keyCode===13) novaTarefa()">
       <button onclick="novaTarefa()" id="botao-nova-task" title="clique aqui para adicionar uma nova tarefa.">
         +
       </button>
     </div>
     <div class="header-list">
       <p id="paragraph">Tarefas Criadas:</p>
-      <select onchange="filtrarPorDone()" id="select-list" name="select">
+      <select onchange="filtroDropDown()" id="select-list" name="select">
         <option value="" disabled>Selecione uma das opções</option>
         <option value="all" selected>Todas as tarefas</option>
         <option value="doneTrue">Tarefas concluidas</option>
